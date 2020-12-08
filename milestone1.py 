@@ -5,11 +5,10 @@ language = "python3"
 ###i did a print statement at the end to tell them their score
 ####by seeing their score, it can give an incentive of possible pride so they complete the quiz, and by seeing how many they got wrong, it can drive home the point of how bad the student debt crisis is
 
- def run_test(questions): 
+ def run_test(questions):
   score = 0
   for question in questions:
     answer = input(question.prompt)
     if answer == question.answer:
       score += 1
   print("You got " + str(score) + "/" + str(len(questions)) + "questions right")
-  
