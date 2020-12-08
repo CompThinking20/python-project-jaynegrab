@@ -1,0 +1,2 @@
+MILESTONE 2 COMMENTS
+You don't need to import questions in order to make this work. I imagine that you got that from some test code online, but I actually don't see how it's going to help you here. What I would focus on now is getting the code to ask a series of questions: you have the setup to create a bunch of questions in a loop, so I'd focus on doing it that way, and then asking the user the questions and keeping score.
