@@ -11,21 +11,37 @@ language = "python3"
 ###It would be cool to have the quiz tell you how many of each there are. The student debt crisis is about 1.6 trillion, and there are about 3.5 million fish, which is only about 2.2 times greater
 ####I know I had to create the question.py file, but I'm stuck on how to define "question". Otherwise, everything runs
 
-from Question import question
-
-question_prompts = [
-    "What's more: the number of dollars in US student debt, or the estimated number of fish in the sea?\n(a) Debt\n(b) Fish"
-]
-
-questions = [
-    Question(question_prompts[0], "(b)")
-]
-class ClassName(Question):
-    """docstring for ."""
-
+class Question:
     def __init__(self, prompt, answer):
         self.prompt = prompt
         self.answer = answer
+
+question_prompts = [
+    "What's more: the number of dollars in US student debt, or the estimated number of fish in the sea?\n(a) Debt\n(b) Fish"
+    "What's more: the number of dollars in US student debt, or Bill Gates' net worth?\n(a) Debt\n(b) Net worth"
+    "What's more: the number of dollars in US student debt, or the number of feet in 100 million miles?\(a) Debt\n(b) Feet"
+    "What's more: the number of dollars in US student debt, or the dollar cost of every team in every major sports league combined?\n(a) Debt\n(b) All the teams"
+    "What's more: the number of dollars in US student debt, or the speed of light in miles per hour?\n(a) Debt\n(b) Speed of light"
+    "What's more: the number of dollars in US student debt, or the value of Apple Inc?\n(a) Debt\n(b) Apple"
+    "What's more: the number of dollars in US student debt, or the number of square miles covering 1,000 planet Earths?\n(a) Debt\n(b) Square miles"
+    "What's more: the number of dollars in US student debt, or the number of seconds in 50,000 years?\n(a) Debt\n(b) Seconds"
+    "What's more: the number of dollars in US student debt, or the number of dollars it would take to pay for the chemotherapy of every cancer patient for the next 100 years?\n(a) Debt\n(b) Chemotherapy"
+    "What's more: the number of dollars in US student debt, or the number of dollars it would take to 1. lift every American out of poverty and 2. end world hunger... twice each?\n(a) Debt\n(b) Poverty and hunger"
+
+]
+
+questions = [
+    Question(question_prompts[0], "(b)"),
+    Question(question_prompts[1], "(a)"),
+    Question(question_prompts[2], "(a)"),
+    Question(question_prompts[3], "(a)"),
+    Question(question_prompts[4], "(a)"),
+    Question(question_prompts[5], "(b)"),
+    Question(question_prompts[6], "(a)"),
+    Question(question_prompts[7], "(a)"),
+    Question(question_prompts[8], "(a)"),
+    Question(question_prompts[9], "(a)")
+]
 
 def run_test(questions):
   score = 0
