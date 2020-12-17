@@ -1,1 +1,16 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=3754331&assignment_repo_type=AssignmentRepo)
+
+
+Project Overview
+The basis of the project is the student debt crisis in the United States, specifically since it has reached over 1.5 trillion dollars. This number is obviously way too big to conceptualize, so I thought it would help to compare it to numbers that are in the same ballpark. I was personally surprised when researching relatively similar numbers, and some questions obviously serve as social commentary, like the last one about poverty and hunger.
+I was able to accomplish a decent chunk of this-- I created a class based quiz with ten different questions and their answers, a for loop that tells the user's score at the end. The print statement will tell them that they got x/10 questions correct.
+This could definitely be expanded to include more questions, and I think it would be great to have it so it tells the user how much each option for the question really was (i.e. there is $1.6 trillion dollars in US student debt, and about 3.5 trillion fish in the ocean, which is about 2.8 times more).
+
+Project Narrative
+This project was quite difficult for me, and it took me awhile to work out each portion so that it ran without error. After thinking up the proposal, I was excited about the concept, but realized it was more complicated than I thought. As for Milestone 1, I first wrote out every piece of what I thought I would need. This included the questions, the answers to the questions, and then the score keeping. For some reason it made more sense to me to do the last step of the quiz first, which was calculating the user's score. I defined the run_test function to do this. I made it so the score starts at 0, and made a for loop: "for question in questions," the answer is the input (the user's answer) to the question prompt. Then, if their answer is equal to the question's answer, the score increases by one for each time this occurs. I then did a print statement that reads you got (their score) out of (the amount of questions) correct. I did it this way so that if the project continues and I were to add more questions, it would adjust for that. Finally, I called the function.
+For Milestone 2, I had to work backwards a little bit. This is probably something I would change if I were to do the project again, because it broke my brain a little bit. I made a Question class that held the prompts and the answers that matched the stuff I did for Milestone 1, and set up the questions and answers. I chose 1 question and its corresponding answer to see if it worked.
+The concepts from the lectures that helped were the for loops, creating a class, creating a function, calling that function, and print statements.
+
+Corrections
+I mistakenly thought I had to import questions when the Internet led me astray, and you corrected that, so I took it out.
+You also said to focus on creating a bunch of questions and having the for loop keep track of the answers/the user's score, so I added 10 questions and made sure that worked.
